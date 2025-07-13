@@ -1,0 +1,11 @@
+:root {
+    --text: #ffffff;
+    --background: #030104;
+    --primary: #70e43a;
+    --secondary: #06280c;
+    --accent: #b9dc1e;
+    --dark-accent: #14230c;
+    --dark-secondary: #030905;
+
+    font-family: Arial, sans-serif;
+}

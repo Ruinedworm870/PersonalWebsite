@@ -1,0 +1,7 @@
+.upOnHover:hover{
+    transform: translateY(-3px);
+}
+
+.upOnHover{
+    transition: 0.2s ease;
+}

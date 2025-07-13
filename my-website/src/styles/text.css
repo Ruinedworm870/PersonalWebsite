@@ -1,0 +1,17 @@
+.normalText{
+    color: var(--text);
+}
+
+.titleText{
+    color: var(--primary);
+}
+
+.hoverText:hover{
+    color: var(--primary);
+}
+
+.hoverText{
+    color: var(--text);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
