@@ -15,3 +15,43 @@
     transition: 0.2s ease;
     cursor: pointer;
 }
+
+
+/* Glitch Text */
+
+.glitchText{
+    display: grid;
+    grid-template-columns: 1fr;
+    user-select: none;
+    position: relative;
+}
+
+.glitchText div{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    animation: flyIn 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(120ms);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+@keyframes flyIn{
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+        text-shadow: -2px 3px 0 var(--primary), 2px -3px 0 var(--accent);
+    }
+    60% {
+        opacity: 0.5;
+        transform: translateX(5%);
+    }
+    80% {
+        transform: none;
+        opacity: 1;
+        text-shadow: 2px -3px 0 var(--primary), -2px 3px 0 var(--accent);
+    }
+    100% {
+        text-shadow: none;
+    }
+}

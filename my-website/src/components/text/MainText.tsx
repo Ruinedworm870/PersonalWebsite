@@ -1,15 +1,16 @@
 import { CSSProperties, ReactNode } from "react";
 
-interface Props{
+export interface MainTextProps{
     children?: ReactNode | ReactNode[];
     color?: "normal" | "title" | "hover";
     size?: number;
     align?: CSSProperties['textAlign'];
     style?: CSSProperties;
     bold?: boolean;
+    className?: string;
 }
 
-const MainText: React.FC<Props> = ({ children, color = "normal", size = 16, align = "left", style, bold }) =>
+const MainText: React.FC<MainTextProps> = ({ children, color = "normal", size = 16, align = "left", style, bold, className }) =>
 {
     const s: CSSProperties = {
         fontSize: size,
@@ -19,7 +20,7 @@ const MainText: React.FC<Props> = ({ children, color = "normal", size = 16, alig
     
     return (
         <div
-            className={ color + "Text" }
+            className={ color + "Text" + " " + className }
             style={{ ...style, ...s }}
         >
             {children}
