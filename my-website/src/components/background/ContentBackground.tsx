@@ -17,10 +17,12 @@ const ContentBackground: React.FC<Props> = ({ children }) =>
                 left: 0,
                 right: 0,
                 bottom: 0,
-                position: "absolute",
+                position: "fixed",
                 borderWidth: 1,
                 borderColor: Colors.primary,
-                borderStyle: "solid"
+                borderStyle: "solid",
+                borderTopStyle: 'none',
+                zIndex: -1
             }}
         >
             { children }

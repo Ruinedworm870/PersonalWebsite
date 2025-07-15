@@ -1,0 +1,9 @@
+.box{
+    transition: 0.2s ease;
+    background-color: transparent;
+}
+
+.box:hover{
+    transform: translateY(-3px);
+    background-color: var(--secondary);
+}

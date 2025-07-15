@@ -1,6 +1,6 @@
 import MainText, { MainTextProps } from "./MainText";
 
-const GlitchText: React.FC<MainTextProps> = ({ children, color = "normal", size = 16, align = "left", style, bold = false }) =>
+const GlitchText: React.FC<MainTextProps> = ({ children, color = "normal", size = 16, align = "left", style, bold = false, className }) =>
 {
     return (
         <div
@@ -12,6 +12,7 @@ const GlitchText: React.FC<MainTextProps> = ({ children, color = "normal", size 
                 align={align}
                 bold={bold}
                 style={style}
+                className={className}
             >
                 {children}
             </MainText>

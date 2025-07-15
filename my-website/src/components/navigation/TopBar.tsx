@@ -57,6 +57,7 @@ const TopBar: React.FC<Props> = () =>
                 borderWidth: 1,
                 borderColor: Colors.primary,
                 borderBottomStyle: "solid",
+                borderTopStyle: "solid",
                 backgroundColor: Colors.background,
                 zIndex: 1,
                 position: "sticky",

@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import "@/styles/style.css";
 import "@/styles/hover.css";
 import "@/styles/text.css";
+import "@/styles/box.css"
 
 export const metadata: Metadata = {
 	title: "William Smolinski Jr",
@@ -20,14 +21,20 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 			<body
 				className={`antialiased`}
 				style={{
-					backgroundColor: Colors.background
+					backgroundColor: Colors.background,
+					margin: 0
 				}}
 			>
 				<MatrixRainCanvas />
-				<ContentBackground>
+				<ContentBackground />
+				
+				<div style={{
+					width: "85%",
+					margin: "auto"
+				}}>
 					<TopBar />
 					{children}
-				</ContentBackground>
+				</div>
 			</body>
 		</html>
 	);
