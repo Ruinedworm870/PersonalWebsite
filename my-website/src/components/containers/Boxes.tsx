@@ -16,10 +16,11 @@ interface Props{
     style?: CSSProperties;
     imageSize?: number;
     boxWidth?: CSSProperties['width'];
-    gap?: CSSProperties['gap']
+    gap?: CSSProperties['gap'];
+    boxPadding?: CSSProperties['padding'];
 }
 
-const Boxes: React.FC<Props> = ({ data = [], style, imageSize = 256, boxWidth = 100, gap = 10 }) =>
+const Boxes: React.FC<Props> = ({ data = [], style, imageSize = 256, boxWidth = 100, gap = 10, boxPadding = 5 }) =>
 {
     const GetBoxContent = (image: string, title: string, text: string) =>
     {
@@ -77,6 +78,7 @@ const Boxes: React.FC<Props> = ({ data = [], style, imageSize = 256, boxWidth = 
                         >
                             <Box
                                 width={boxWidth}
+                                padding={boxPadding}
                             >
                                 {GetBoxContent(d.image, d.title, d.text)}
                             </Box>
@@ -86,6 +88,7 @@ const Boxes: React.FC<Props> = ({ data = [], style, imageSize = 256, boxWidth = 
                     {d.link == "" &&
                         <Box
                             width={boxWidth}
+                            padding={boxPadding}
                         >
                             {GetBoxContent(d.image, d.title, d.text)}
                         </Box>

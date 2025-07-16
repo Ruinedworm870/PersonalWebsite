@@ -5,9 +5,10 @@ interface Props{
     children?: ReactNode | ReactNode[];
     padding?: CSSProperties['padding'];
     width?: CSSProperties['width'];
+    style?: CSSProperties;
 }
 
-const Box: React.FC<Props> = ({ children, padding = 5, width = 100 }) =>
+const Box: React.FC<Props> = ({ children, padding = 5, width = 100, style }) =>
 {
     return (
         <div
@@ -19,7 +20,8 @@ const Box: React.FC<Props> = ({ children, padding = 5, width = 100 }) =>
                 borderStyle: "solid",
                 flex: 1,
                 padding: padding,
-                width: width
+                width: width,
+                ...style
             }}
         >
             { children }

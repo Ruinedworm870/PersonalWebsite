@@ -32,7 +32,6 @@ export default function Home()
             }}
         >
             <GlitchText color="title" size={64} bold align="center">William Smolinski Jr</GlitchText>
-            <GlitchText size={32} bold align="center" style={{margin: "5px 0"}}>Software Engineer | Game Developer</GlitchText>
             
             <div
                 style={{
