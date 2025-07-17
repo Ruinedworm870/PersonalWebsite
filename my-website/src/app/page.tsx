@@ -9,19 +9,19 @@ export default function Home()
             image: "/images/SpacePrivateerIcon.png",
             title: "Space Privateer",
             text: "My first game jam game",
-            link: ""
-        },
-        {
-            image: "/images/AutomationArmsFactoryIcon.png",
-            title: "Automation Arms Factory",
-            text: "My second mobile game",
-            link: ""
+            link: "/projects/space-privateer"
         },
         {
             image: "/images/API.png",
             title: "About Me Website",
             text: "",
-            link: ""
+            link: "/projects/about-me-website"
+        },
+        {
+            image: "/images/TechEmpireTycoon.png",
+            title: "Tech Empire Tycoon",
+            text: "My third mobile game currently in development",
+            link: "/projects/tech-empire-tycoon"
         }
     ]
     
@@ -66,6 +66,7 @@ export default function Home()
                 data={featuredContentBoxes}
                 boxWidth={350}
                 gap={16}
+                boxPadding={"10px 5px"}
                 style={{
                     marginTop: 20
                 }}

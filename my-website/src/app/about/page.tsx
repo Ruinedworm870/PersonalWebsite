@@ -1,9 +1,8 @@
-import Box from "@/components/containers/Box";
+import MainButton from "@/components/buttons/MainButton";
 import Boxes, { BoxesType } from "@/components/containers/Boxes";
 import GlitchText from "@/components/text/GlitchText";
 import MainText from "@/components/text/MainText";
 import { Paragraph, TextBlock } from "@/components/text/TextBlock";
-import Link from "next/link";
 
 export default function About()
 {
@@ -106,6 +105,12 @@ export default function About()
             title: "Next.js",
             text: "<1 year",
             link: ""
+        },
+        {
+            image: "/images/chatGPT.png",
+            title: "ChatGPT",
+            text: "2 years",
+            link: ""
         }
     ];
     
@@ -157,24 +162,14 @@ export default function About()
                 </Paragraph>
             </TextBlock>
             
-            <Link
+            <MainButton
                 href={"/pdfs/Resume.pdf"}
-                target="_blank"
-                style={{
-                    textDecoration: "none",
-                    margin: "auto",
-                    width: "fit-content",
-                    display: "block",
-                    marginTop: 25,
+                additionalStyle={{
+                    marginTop: 25
                 }}
             >
-                <Box
-                    width={"fit-content"}
-                    padding={"5px 10px"}
-                >
-                    <MainText size={32} align="center" bold>Resume</MainText>
-                </Box>
-            </Link>
+                <MainText size={32} align="center" bold>Resume</MainText>
+            </MainButton>
             
             <div style={{padding: 100}}></div>
         </div>

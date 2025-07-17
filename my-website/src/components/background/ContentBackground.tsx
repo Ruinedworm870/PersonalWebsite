@@ -1,32 +1,51 @@
 import { Colors } from "@/hooks/Colors";
-import { ReactNode } from "react";
 
 interface Props{
-    children?: ReactNode | ReactNode[];
+    
 }
 
-const ContentBackground: React.FC<Props> = ({ children }) =>
+const ContentBackground: React.FC<Props> = () =>
 {
     return (
-        <div
-            style={{
-                width: "85%",
-                backgroundColor: Colors.background,
-                margin: "auto",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                position: "fixed",
-                borderWidth: 1,
-                borderColor: Colors.primary,
-                borderStyle: "solid",
-                borderTopStyle: 'none',
-                zIndex: -1
-            }}
-        >
-            { children }
-        </div>
+        <>
+            {/* Background layer */ }
+            <div
+                style={{
+                    width: "85%",
+                    margin: "auto",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    position: "fixed",
+                    backgroundColor: Colors.background,
+                    zIndex: -1
+                }}
+            >
+
+            </div>
+
+            {/* Border layer */}
+            <div
+                style={{
+                    width: "85%",
+                    margin: "auto",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    position: "fixed",
+                    borderWidth: 1,
+                    borderColor: Colors.primary,
+                    borderStyle: "solid",
+                    borderTop: "none",
+                    pointerEvents: "none",
+                    zIndex: 10,
+                }}
+            >
+
+            </div>
+        </>
     )
 }
 
