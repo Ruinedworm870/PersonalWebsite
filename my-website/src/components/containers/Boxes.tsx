@@ -26,20 +26,22 @@ const Boxes: React.FC<Props> = ({ data = [], style, imageSize = 256, boxWidth = 
     {
         return (
             <>
-                <div
-                    style={{
-                        width: "100%",
-                        display: "flex",
-                        justifyContent: "center"
-                    }}
-                >
-                    <Image
-                        src={image}
-                        alt={title}
-                        width={imageSize}
-                        height={imageSize}
-                    />
-                </div>
+                {image != "" && 
+                    <div
+                        style={{
+                            width: "100%",
+                            display: "flex",
+                            justifyContent: "center"
+                        }}
+                    >
+                        <Image
+                            src={image}
+                            alt={title}
+                            width={imageSize}
+                            height={imageSize}
+                        />
+                    </div>
+                }   
                 <MainText bold align="center" style={{margin: "8px 0"}}>{title}</MainText>
                 <MainText align="center">{text}</MainText>
             </>

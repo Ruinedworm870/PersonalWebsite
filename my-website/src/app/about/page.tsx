@@ -60,6 +60,12 @@ export default function About()
             title: "SQL",
             text: "1 year",
             link: ""
+        },
+        {
+            image: "/images/Lua.png",
+            title: "Lua",
+            text: "<1 year",
+            link: ""
         }
     ];
     
@@ -101,18 +107,33 @@ export default function About()
             link: ""
         },
         {
-            image: "/images/nextJS.png",
+            image: "/images/NextJS.png",
             title: "Next.js",
             text: "<1 year",
             link: ""
         },
         {
-            image: "/images/chatGPT.png",
+            image: "/images/ChatGPT.png",
             title: "ChatGPT",
             text: "2 years",
             link: ""
         }
     ];
+
+    const aiBoxes: BoxesType = [
+        {
+            image: "",
+            title: "Prompt Engineering",
+            text: "2 years",
+            link: ""
+        },
+        {
+            image: "",
+            title: "AI-Augmented Development",
+            text: "2 years",
+            link: ""
+        }
+    ]
     
     return (
         <div
@@ -133,7 +154,7 @@ export default function About()
                     marginTop: 20,
                 }}
             />
-
+            
             <GlitchText color="title" size={40} bold align="center" style={{ marginTop: 50 }}>Technologies</GlitchText>
             <Boxes
                 data={technologiesBoxes}
@@ -146,6 +167,18 @@ export default function About()
                 }}
             />
             
+            <GlitchText color="title" size={40} bold align="center" style={{ marginTop: 50 }}>AI</GlitchText>
+            <Boxes
+                data={aiBoxes}
+                boxWidth={158}
+                imageSize={100}
+                gap={15}
+                boxPadding={"10px 5px"}
+                style={{
+                    marginTop: 20,
+                }}
+            />
+
             <GlitchText color="title" size={40} bold align="center" style={{ marginTop: 50 }}>Background</GlitchText>
             <TextBlock>
                 <Paragraph>

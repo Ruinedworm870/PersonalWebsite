@@ -1,0 +1,1 @@
+Programming and Logic 1 was the first programming class I took in college. Before this class I had some experience with Unity and coding in C#, so I thought the class was super easy. All of these programs are quite simple, but the most notable might be the ones with multiple scripts.
