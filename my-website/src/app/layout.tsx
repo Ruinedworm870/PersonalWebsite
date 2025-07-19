@@ -2,7 +2,7 @@ import ContentBackground from "@/components/background/ContentBackground";
 import MatrixRainCanvas from "@/components/background/MatrixRainCanvas";
 import TopBar from "@/components/navigation/TopBar";
 import { Colors } from "@/hooks/Colors";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import "@/styles/style.css";
 import "@/styles/hover.css";
@@ -11,8 +11,13 @@ import "@/styles/box.css"
 
 export const metadata: Metadata = {
 	title: "William Smolinski Jr",
-	description: "Portfolio site for William Smolinski Jr",
+	description: "Portfolio site for William Smolinski Jr"
 };
+
+export const viewport: Viewport = {
+	width: undefined,
+	initialScale: undefined
+}
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>)
 {

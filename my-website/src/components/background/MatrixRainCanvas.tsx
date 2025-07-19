@@ -78,7 +78,7 @@ const MatrixRainCanvas: React.FC<Props> = () =>
         SetupCanvas();
         
         animationFrameId.current = requestAnimationFrame(Draw);//setInterval(Draw, 33);
-
+        
         window.addEventListener('resize', SetupCanvas);
 
         return () => {
