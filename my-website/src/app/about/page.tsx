@@ -28,37 +28,37 @@ export default function About()
         {
             image: "/images/HTML.png",
             title: "HTML",
-            text: "3 years",
+            text: "4 years",
             link: ""
         },
         {
             image: "/images/CSS.png",
             title: "CSS",
-            text: "3 years",
+            text: "4 years",
             link: ""
         },
         {
             image: "/images/JS.png",
             title: "JavaScript",
-            text: "4 years",
+            text: "5 years",
             link: ""
         },
         {
             image: "/images/TypeScript.png",
             title: "TypeScript",
-            text: "2 years",
+            text: "3 years",
             link: ""
         },
         {
             image: "/images/PHP.png",
             title: "PHP",
-            text: "1 year",
+            text: "2 years",
             link: ""
         },
         {
             image: "/images/SQL.png",
             title: "SQL",
-            text: "1 year",
+            text: "2 years",
             link: ""
         },
         {
@@ -79,13 +79,13 @@ export default function About()
         {
             image: "/images/GitHub.png",
             title: "GitHub",
-            text: "3 years",
+            text: "4 years",
             link: ""
         },
         {
             image: "/images/AWS.png",
             title: "AWS",
-            text: "2 years",
+            text: "3 years",
             link: ""
         },
         {
@@ -97,25 +97,25 @@ export default function About()
         {
             image: "/images/React.png",
             title: "React",
-            text: "2 years",
+            text: "3 years",
             link: ""
         },
         {
             image: "/images/WordPress.png",
             title: "WordPress",
-            text: "1 year",
+            text: "2 years",
             link: ""
         },
         {
             image: "/images/NextJS.png",
             title: "Next.js",
-            text: "<1 year",
+            text: "1 year",
             link: ""
         },
         {
             image: "/images/ChatGPT.png",
             title: "ChatGPT",
-            text: "2 years",
+            text: "3 years",
             link: ""
         }
     ];
@@ -124,13 +124,13 @@ export default function About()
         {
             image: "",
             title: "Prompt Engineering",
-            text: "2 years",
+            text: "3 years",
             link: ""
         },
         {
             image: "",
             title: "AI-Augmented Development",
-            text: "2 years",
+            text: "3 years",
             link: ""
         }
     ]
