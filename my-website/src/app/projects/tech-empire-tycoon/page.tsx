@@ -17,10 +17,10 @@ export default function TechEmpireTycoon() {
                 }}
             >
                 <Paragraph>
-                    Tech Empire Tycoon is the third mobile game I have worked on, and is currently in development. It's completely different than the rest of my games because I'm building it with React Native and Expo instead of Unity. I wanted to build it with React Native because it's a lot easier to code UI with React than in Unity, and the game is entirely UI menu based. 
+                    Tech Empire Tycoon is the third mobile game I have worked on, and is currently in development. It's completely different than the rest of my games because I'm building it with React Native and Expo instead of Unity. I wanted to build it with React Native because I think it's a lot easier to code UI with React than in Unity, and the game is entirely UI menu based. 
                 </Paragraph>
                 <Paragraph>
-                    I have a playable version available on Itch.io linked below. I'm trying to take this game more seriously than my previous games and I'm attempting to gather feedback to shape the development of the game.
+                    View the Itch.io link below for more information about the game including screenshots and information on how to play the game.
                 </Paragraph>
             </TextBlock>
 
