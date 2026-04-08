@@ -21,7 +21,7 @@ export default function AboutMeWebsite() {
                     This is the third version of my website. The current version runs with Next.js hosted on an AWS EC2 instance. The original version of the site was made with plain html being served over a Flask API, and the second version of the site ran with php.
                 </Paragraph>
                 <Paragraph>
-                    All of the code for the current version is public on my GitHub linked below. I have plans to expand the site, the progress of that is also public on my GitHub.
+                    All of the code for the current version is public on my GitHub linked below.
                 </Paragraph>
             </TextBlock>
             

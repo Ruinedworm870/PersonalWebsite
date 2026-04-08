@@ -19,10 +19,16 @@ export default function RockSimulator()
                 }}
             >
                 <Paragraph>
-                    Rock Simulator is my first completed Roblox game. Before this game I was originally going to work on another Roblox game with a friend, but that never happened, so I decided to make my own game. If you look at the activity on my GitHub profile, the about 4 month period of nothing was when I was doing Roblox stuff. In that 4 month period I taught myself how to code in the Roblox Luau programming language, I then made this game and messed around with a couple other prototypes before deciding to start Tech Empire Tycoon.
+                    Rock Simulator is my first completed Roblox game and primarily served as an introduction to multiplayer game development. Building it required working with Roblox's client-server model, which meant clearly separating logic between the server and client and deciding what data needed to be replicated, when, and how often.
                 </Paragraph>
                 <Paragraph>
-                    With this project I learned a lot about making a multiplayer game. When making the game I had to handle server and client side code and handle what gets sent where, and when it gets sent. In the end it was really interesting and I learned a lot. I have a link to the game below, you will need a Roblox account to play the game.
+                    This project forced me to think about networking from the start. I had to manage remote events, handle synchronization, and make sure gameplay remained consistent across multiple players while avoiding unnecessary data transfer. It also introduced constraints around security and trust, since the server has to validate important actions rather than relying on the client.
+                </Paragraph>
+                <Paragraph>
+                    In the process, I learned Luau and gained a practical understanding of how multiplayer systems are structured and maintained. This experience carried over into how I think about architecture, data flow, and performance in other projects.
+                </Paragraph>
+                <Paragraph>
+                    You will need a Roblox account to play the game using the link below.
                 </Paragraph>
             </TextBlock>
             

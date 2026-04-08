@@ -1,6 +1,8 @@
 import GlitchText from "@/components/text/GlitchText"
 import { Paragraph, TextBlock } from "@/components/text/TextBlock"
 import TechEmpireTycoonIFrame from "./TechEmpireTycoonIFrame"
+import MainButton from "@/components/buttons/MainButton"
+import MainText from "@/components/text/MainText"
 
 export default function TechEmpireTycoon() {
     return (
@@ -17,21 +19,36 @@ export default function TechEmpireTycoon() {
                 }}
             >
                 <Paragraph>
-                    Tech Empire Tycoon is the third mobile game I have worked on, and is currently in development. It's completely different than the rest of my games because I'm building it with React Native and Expo instead of Unity. I wanted to build it with React Native because I think it's a lot easier to code UI with React than in Unity, and the game is entirely UI menu based. 
+                    Tech Empire Tycoon is the third mobile game I've worked on, and it's a bit different from my other projects. Instead of using Unity, I built it with React Native and Expo. I chose that stack because the game is entirely UI-driven, and React makes it much faster and more intuitive to build and manage interface-heavy systems.
                 </Paragraph>
                 <Paragraph>
-                    View the Itch.io link below for more information about the game including screenshots and information on how to play the game.
+                    The game itself is a simple offline idle business game. The player builds up tech companies over time to earn more money and unlock better companies. It is designed to be easy to pick up, with steady progression and clear feedback through the UI.
+                </Paragraph>
+                <Paragraph>
+                    During development, I shared early versions and observed how people actually played. That made it clear where players got confused or slowed down, which I used to refine the UI, rebalance progression, and simplify systems so the game felt more intuitive without explanation.
+                </Paragraph>
+                <Paragraph>
+                    This project gave me a lot of experience working outside of Unity and reinforced my ability to build clean, functional UI systems.
+                </Paragraph>
+                <Paragraph>
+                    Below is the link to the Google Play Store page.
                 </Paragraph>
             </TextBlock>
+            
+            <MainButton
+                href={"https://play.google.com/store/apps/details?id=com.ruinedworm870.ClickerGame"}
+            >
+                <MainText align="center" size={28} bold>Play Store Link</MainText>
+            </MainButton>
 
-            <div
+            {/*<div
                 style={{
                     width: "fit-content",
                     margin: "25px auto"
                 }}
             >
                 <TechEmpireTycoonIFrame />
-            </div>
+            </div>*/}
         </div>
     )
 }

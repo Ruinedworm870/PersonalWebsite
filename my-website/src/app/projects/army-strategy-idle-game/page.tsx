@@ -18,17 +18,20 @@ export default function ArmyStrategyIdleGame() {
                 }}
             >
                 <Paragraph>
-                    Army Strategy: Idle game is the first game I made using Unity and C#. I learned a lot from making this game that allowed me to improve and make my second game much better.
+                    Army Strategy: Idle Game is the first game I built using Unity and C#. It was a learning-focused project that gave me the foundation I used to significantly improve my second game.
                 </Paragraph>
                 <Paragraph>
-                    There really isn't anything too advanced in this game. However, I did integrate Google Play Games into my game to have a leaderboard and achievements along with cloud saving which was a challenge, I also integrated IronSource for ads as well. The calculations behind the scenes in the game are also not extremely complex, but I did a lot of experimenting with them to try and find the best way of doing things, especially towards the end when I knew so much more than when I started.
+                    The systems in this game are relatively simple, but I still implemented several key features. I integrated Google Play Games for leaderboards, achievements, and cloud saving, along with IronSource for ads. The underlying calculations are not especially complex, but I spent a lot of time experimenting with them, especially later in development as my understanding improved.
                 </Paragraph>
                 <Paragraph>
-                    There were a few mistakes I made when making this game. There was one major one that was an issue throughout development. The mistake was that I never had a clear picture on what I wanted the game to be. This was a major issue because I was learning about the whole process in general which took some time, but because I didn't quite have a clear plan, I was subject to scope creep which slowed down development and made it take forever to finish. In the end, I just decided to finish it to get it out because I just wanted to be done working on it, resulting in me not really liking the game. This was definitely the biggest mistake that I learned from, and it allowed my next game to be much better.
+                    The biggest issue with this project was a lack of clear direction. I did not have a well-defined vision for what the game should be, which led to scope creep and slowed development significantly. Combined with the fact that I was learning the entire development process at the same time, this made the project take much longer than it should have.
+                </Paragraph>
+                <Paragraph>
+                    In the end, I pushed it to completion mainly to move on, which resulted in a final product I was not fully satisfied with. However, that experience was the most valuable part of the project, as it directly influenced how I approached planning and development in later games.
                 </Paragraph>
             </TextBlock>
-
-            <MainText align="center" size={18} style={{ width: "85%", margin: "50px auto 25px auto" }} bold>You can download the game from the link below, my Google Play Games Developer account has been closed due to inactivity, so the game is no longer available on Google Play</MainText>
+            
+            <MainText align="center" size={18} style={{ width: "85%", margin: "50px auto 25px auto" }} bold>The game is no longer available on Google Play because my Google Play Games Developer account was closed due to inactivity, but it can still be downloaded from the link below.</MainText>
         
             <MainButton
                 href={"/downloads/ASIG_V_1.0.3.apk"}

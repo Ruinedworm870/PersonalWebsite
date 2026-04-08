@@ -21,7 +21,7 @@ export default async function AiChatPage()
                 }}
             >
                 <Paragraph>
-                    I built this AI Wrapper to demonstrate my ability with API's and to learn how AI Wrappers work. This wrapper is really simple, it takes in information about your tech stack and returns a list of 5 to 10 ideas for projects to complete with your tech stack. I'm using the Google Gemini API for this wrapper because they have a free tier, and it's using the Gemini 2.0 Flash-Lite model because it has the highest rate limit.  
+                    I built this AI Wrapper to demonstrate my ability with API's and to learn how AI Wrappers work. This wrapper is really simple, it takes in information about your tech stack and returns a list of 5 to 10 ideas for projects to complete with your tech stack. I'm using the Google Gemini API for this wrapper because they have a free tier, and it's currently using the Gemini 3.1 Flash-Lite Preview model because it has a high free rate limit.  
                 </Paragraph>
             </TextBlock>
             

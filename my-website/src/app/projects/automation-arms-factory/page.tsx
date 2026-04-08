@@ -18,26 +18,26 @@ export default function AutomationArmsFactory() {
                 }}
             >
                 <Paragraph>
-                    Automation Arms Factory was the second game I made using C# and Unity. I learned a lot from my first game and used that to make this one the best I could make it. I also made this one in less than 2 months.
+                    Automation Arms Factory was the second game I built using C# and Unity. I applied what I learned from my first project and completed this one in under two months.
                 </Paragraph>
                 <Paragraph>
-                    There are more advanced things in this game than the last. However, like the last game I also integrated Google Play Games for achievements, leaderboards, and cloud saving. I also have IronSource integrated for ads. Some of the new things that are advanced in this game would be the planning and multithreading.
+                    This project is more technically advanced than my first. I integrated Google Play Games for achievements, leaderboards, and cloud saving, along with IronSource for ads. More importantly, I put significantly more effort into planning and system design.
                 </Paragraph>
                 <Paragraph>
-                    The planning that went into this game was much more in depth than my last game where I had hardly planned anything. For this game I spent quite some time thinking about what exactly I wanted the game to be like. I also spent time planning how I wanted each of the systems in the game to be made so that I could easily change them and add to them later. Now that I have it released in early access I can definitely say that I learned from my mistake of not planning in my first game, and I effectively planned for this game.
+                    Before development, I spent time defining the core gameplay and structuring systems so they could be extended or modified later. That upfront planning made a noticeable difference compared to my first game, where I had very little structure going in.
                 </Paragraph>
                 <Paragraph>
-                    Also in this game I used multithreading to optimize it. I mainly just had to optimize saving because there is a lot more stuff to save in this game than the last, so it took quite a bit longer and was creating noticeable pauses which were fixed with multithreading.
+                    I also introduced multithreading to improve performance. Saving data became a bottleneck due to the increased amount of game state, which caused noticeable pauses. Moving that work off the main thread resolved the issue and made the game feel much smoother.
                 </Paragraph>
                 <Paragraph>
-                    I also had to create more advanced systems than my first game for things like the item movement in the factories. There were a lot of revisions I had to make to get the item movement in a good spot and there are probably some issues still in there now that I haven't found yet. I started by having an update loop run every frame and loop through each conveyor and move each item to the next slot if it was empty, but this created issues when the next conveyor came after the current conveyor, so the last item on the current conveyor would stop for a frame causing a jumpy look. In the end I settled for a system where each item handled moving itself using FixedUpdate and I added a collider at the center of each tile that will pass new data to the item when it reaches it. The data it passes will tell it the new speed, rotation, or if it is going to a building or not. Center of tile is also used to get items from buildings, if the center is clear it spawns the item, and if it isn't, it adds the item to a queue and will stop some new items going in to create room for the item in the queue.
+                    One of the more complex systems was item movement within the factory. I went through several iterations to get it working reliably. The initial approach used a per-frame loop to move items between conveyor slots, but this caused visible stuttering when items transitioned between conveyors. I replaced it with a system where each item controls its own movement. Each tile has a center collider that updates the item’s speed, direction, or destination as it passes through. The same system handles interactions with buildings, including spawning items, managing queues, and preventing overflow when output paths are blocked.
                 </Paragraph>
                 <Paragraph>
-                    I also had to calculate offline resource consumption and production which was also quite challenging, especially because I couldn't see what was happening like with the moving items. For the offline calculations I had to take into consideration a lot of possibilities which took some time and planning. In the end though I think I have quite a good system for calculating that.
+                    Another challenging part was calculating offline production and consumption. Since this runs without visible simulation, it required careful handling of edge cases and system states. The final implementation accounts for these scenarios and produces consistent results.
                 </Paragraph>
             </TextBlock>
             
-            <MainText align="center" size={18} style={{ width: "85%", margin: "50px auto 25px auto"}} bold>You can download the game from the link below, my Google Play Games Developer account has been closed due to inactivity, so the game is no longer available on Google Play</MainText>
+            <MainText align="center" size={18} style={{ width: "85%", margin: "50px auto 25px auto" }} bold>The game is no longer available on Google Play because my Google Play Games Developer account was closed due to inactivity, but it can still be downloaded from the link below.</MainText>
         
             <MainButton
                 href={"/downloads/AAF_V_1.0.3.apk"}

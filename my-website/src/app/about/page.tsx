@@ -191,18 +191,35 @@ export default function About()
                     I have completed several projects and I'm always working on another. I mostly work on games as my projects since those are the most fun for me. With every project I always try and teach myself something new. Making the games has taught me a lot of skills that have helped me excel at web development and continue to help me excel at learning new things. I'm also skilled at using AI as a tool to accelerate my learning of new things.
                 </Paragraph>
                 <Paragraph>
-                    I currently work for Saratoga County as a Computer Programmer where what I do is mostly full stack web development. I work both independently and in a small team. I am responsible for gathering requirements and running tests in addition to programming the applications. I have made several impactful applications for the county that have made the work of others more efficient.
+                    I currently work for Saratoga County as a Systems Analyst where what I do is mostly full stack web development. I work both independently and in a small team. I am responsible for gathering requirements and running tests in addition to programming the applications. I have made several impactful applications for the county that have made the work of others more efficient.
                 </Paragraph>
             </TextBlock>
             
-            <MainButton
-                href={"/pdfs/Resume.pdf"}
-                additionalStyle={{
-                    marginTop: 25
-                }}
-            >
-                <MainText size={32} align="center" bold>Resume</MainText>
-            </MainButton>
+            <div style={{
+                display: "flex",
+                gap: 16,
+                alignItems: "center",
+            }}>
+                <MainButton
+                    href={"/pdfs/William_Smolinski_Game_Developer_Resume.pdf"}
+                    additionalStyle={{
+                        marginTop: 25,
+                        marginRight: 0
+                    }}
+                >
+                    <MainText size={32} align="center" bold>Game Development Resume</MainText>
+                </MainButton>
+                <MainButton
+                    href={"/pdfs/William_Smolinski_Web_Developer_Resume.pdf"}
+                    additionalStyle={{
+                        marginTop: 25,
+                        marginLeft: 0
+                    }}
+                >
+                    <MainText size={32} align="center" bold>Web Development Resume</MainText>
+                </MainButton>
+            </div>
+            
             
             <div style={{padding: 100}}></div>
         </div>

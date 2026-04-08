@@ -18,10 +18,10 @@ export default function Home()
             link: "/projects/about-me-website"
         },
         {
-            image: "/images/GeminiLogo.png",
-            title: "AI-Powered Project Idea Generator",
-            text: "AI Wrapper with Google Gemini",
-            link: "/projects/ai-wrapper"
+            image: "/images/TechEmpireTycoon.png",
+            title: "Tech Empire Tycoon",
+            text: "My third mobile game, made with React Native and Expo",
+            link: "/projects/tech-empire-tycoon"
         }
     ]
     
