@@ -5,9 +5,27 @@ export default function Projects()
 {
     const projectBoxes: BoxesType = [
         {
+            image: "/images/ReportGenerator.png",
+            title: ".NET Report Generator",
+            text: "ASP.NET Core API with async background job processing",
+            link: "/projects/dotnet-report-generator"
+        },
+        {
+            image: "/images/AuthApp.png",
+            title: ".NET Authentication API",
+            text: "ASP.NET Core authentication and authorization API",
+            link: "/projects/dotnet-auth-app"
+        },
+        {
+            image: "/images/TechEmpireTycoon.png",
+            title: "Tech Empire Tycoon",
+            text: "My third mobile game, made with React Native and Expo",
+            link: "/projects/tech-empire-tycoon"
+        },
+        {
             image: "/images/SpacePrivateerIcon.png",
             title: "Space Privateer",
-            text: "My first game jam game, made with Unity",
+            text: "2D space combat game built in Unity",
             link: "/projects/space-privateer"
         },
         {
@@ -17,10 +35,10 @@ export default function Projects()
             link: "/projects/about-me-website"
         },
         {
-            image: "/images/TechEmpireTycoon.png",
-            title: "Tech Empire Tycoon",
-            text: "My third mobile game, made with React Native and Expo",
-            link: "/projects/tech-empire-tycoon"
+            image: "/images/ApocalypseCommander.png",
+            title: "Apocalypse Commander",
+            text: "Unfinished Unity PC game",
+            link: "/projects/apocalypse-commander"
         },
         {
             image: "/images/GeminiLogo.png",
@@ -45,12 +63,6 @@ export default function Projects()
             title: "College Programs",
             text: "Contains all of the programs I wrote in college",
             link: "/projects/college-programs"
-        },
-        {
-            image: "/images/ApocalypseCommander.png",
-            title: "Apocalypse Commander",
-            text: "Unfinished Unity PC game",
-            link: "/projects/apocalypse-commander"
         },
         {
             image: "/images/RockSimulator.png",

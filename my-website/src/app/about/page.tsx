@@ -10,61 +10,61 @@ export default function About()
         {
             image: "/images/CSharp.png",
             title: "C#",
-            text: "5 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/Java.png",
             title: "Java",
-            text: "2 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/Python.png",
             title: "Python",
-            text: "3 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/HTML.png",
             title: "HTML",
-            text: "4 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/CSS.png",
             title: "CSS",
-            text: "4 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/JS.png",
             title: "JavaScript",
-            text: "5 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/TypeScript.png",
             title: "TypeScript",
-            text: "3 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/PHP.png",
             title: "PHP",
-            text: "2 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/SQL.png",
             title: "SQL",
-            text: "2 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/Lua.png",
             title: "Lua",
-            text: "<1 year",
+            text: "",
             link: ""
         }
     ];
@@ -73,67 +73,58 @@ export default function About()
         {
             image: "/images/Unity.png",
             title: "Unity",
-            text: "5 years",
+            text: "",
+            link: ""
+        },
+        {
+            image: "/images/DotNetLogo.png",
+            title: "ASP.NET Core",
+            text: "",
             link: ""
         },
         {
             image: "/images/GitHub.png",
             title: "GitHub",
-            text: "4 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/AWS.png",
             title: "AWS",
-            text: "3 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/Flask.png",
             title: "Flask",
-            text: "1 year",
+            text: "",
             link: ""
         },
         {
             image: "/images/React.png",
             title: "React",
-            text: "3 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/WordPress.png",
             title: "WordPress",
-            text: "2 years",
+            text: "",
             link: ""
         },
         {
             image: "/images/NextJS.png",
             title: "Next.js",
-            text: "1 year",
+            text: "",
             link: ""
         },
         {
             image: "/images/ChatGPT.png",
             title: "ChatGPT",
-            text: "3 years",
+            text: "",
             link: ""
         }
     ];
-
-    const aiBoxes: BoxesType = [
-        {
-            image: "",
-            title: "Prompt Engineering",
-            text: "3 years",
-            link: ""
-        },
-        {
-            image: "",
-            title: "AI-Augmented Development",
-            text: "3 years",
-            link: ""
-        }
-    ]
     
     return (
         <div
@@ -166,18 +157,6 @@ export default function About()
                     marginTop: 20,
                 }}
             />
-            
-            <GlitchText color="title" size={40} bold align="center" style={{ marginTop: 50 }}>AI</GlitchText>
-            <Boxes
-                data={aiBoxes}
-                boxWidth={158}
-                imageSize={100}
-                gap={15}
-                boxPadding={"10px 5px"}
-                style={{
-                    marginTop: 20,
-                }}
-            />
 
             <GlitchText color="title" size={40} bold align="center" style={{ marginTop: 50 }}>Background</GlitchText>
             <TextBlock>
@@ -201,7 +180,7 @@ export default function About()
                 alignItems: "center",
             }}>
                 <MainButton
-                    href={"/pdfs/William_Smolinski_Game_Developer_Resume.pdf"}
+                    href={"/pdfs/William_Smolinski_Game_Resume.pdf"}
                     additionalStyle={{
                         marginTop: 25,
                         marginRight: 0
@@ -210,7 +189,7 @@ export default function About()
                     <MainText size={32} align="center" bold>Game Development Resume</MainText>
                 </MainButton>
                 <MainButton
-                    href={"/pdfs/William_Smolinski_Web_Developer_Resume.pdf"}
+                    href={"/pdfs/William_Smolinski_Web_Resume.pdf"}
                     additionalStyle={{
                         marginTop: 25,
                         marginLeft: 0

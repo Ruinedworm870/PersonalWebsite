@@ -8,20 +8,26 @@ export default function Home()
         {
             image: "/images/SpacePrivateerIcon.png",
             title: "Space Privateer",
-            text: "My first game jam game, made with Unity",
+            text: "2D space combat game built in Unity",
             link: "/projects/space-privateer"
         },
         {
-            image: "/images/API.png",
-            title: "About Me Website",
-            text: "Website running with next.js",
-            link: "/projects/about-me-website"
+            image: "/images/ReportGenerator.png",
+            title: ".NET Report Generator",
+            text: "ASP.NET Core API with async background job processing",
+            link: "/projects/dotnet-report-generator"
         },
         {
             image: "/images/TechEmpireTycoon.png",
             title: "Tech Empire Tycoon",
             text: "My third mobile game, made with React Native and Expo",
             link: "/projects/tech-empire-tycoon"
+        },
+        {
+            image: "/images/AuthApp.png",
+            title: ".NET Authentication API",
+            text: "ASP.NET Core authentication and authorization API",
+            link: "/projects/dotnet-auth-app"
         }
     ]
     
