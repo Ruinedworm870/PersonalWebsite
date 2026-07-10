@@ -161,16 +161,13 @@ export default function About()
             <GlitchText color="title" size={40} bold align="center" style={{ marginTop: 50 }}>Background</GlitchText>
             <TextBlock>
                 <Paragraph>
-                    My name is William Smolinski Jr, but I prefer to be called Billy. I have been coding for about 5 years now. I started out by learning to make games since I enjoyed playing them, and I still make them in my spare time. I then branched out into web development where I made this website before getting my current job. I actively maintain this site and it's currently in it's third version.
+                    My name is William Smolinski Jr, but I prefer to be called Billy. I've been programming for over 6 years, starting with game development before expanding into full-stack web development. I still enjoy building games in my spare time because they constantly challenge me to learn new things and solve interesting problems.
                 </Paragraph>
                 <Paragraph>
-                    I have an Associates degree in Computer Information Systems. I graduated with a 4.0 GPA having completed about half in high school and the other half online the year after I graduated high school.
+                    I currently work as a Systems Analyst / Full-Stack Developer for Saratoga County, where I design, develop, and maintain internal web applications that improve day-to-day operations. My work covers the full development lifecycle, from gathering requirements and designing solutions to implementation, testing, and deployment.
                 </Paragraph>
                 <Paragraph>
-                    I have completed several projects and I'm always working on another. I mostly work on games as my projects since those are the most fun for me. With every project I always try and teach myself something new. Making the games has taught me a lot of skills that have helped me excel at web development and continue to help me excel at learning new things. I'm also skilled at using AI as a tool to accelerate my learning of new things.
-                </Paragraph>
-                <Paragraph>
-                    I currently work for Saratoga County as a Systems Analyst where what I do is mostly full stack web development. I work both independently and in a small team. I am responsible for gathering requirements and running tests in addition to programming the applications. I have made several impactful applications for the county that have made the work of others more efficient.
+                    I earned my Associate of Science in Computer Information Systems with a 4.0 GPA. Outside of work, I regularly build personal projects ranging from web applications to games. I try to learn something new with every project I build.
                 </Paragraph>
             </TextBlock>
             
